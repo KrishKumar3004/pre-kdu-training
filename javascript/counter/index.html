@@ -10,3 +10,39 @@ Make sure the “-” button has an id of decrement
 
 The IDs should match or else the tests will fail.
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+
+    <div>
+        <button id="increment">+</button>
+        <div id="counter-value">0</div>
+        <button id="decrement">-</button>
+    </div>
+
+    <script>
+        const counterValue = document.getElementById('counter-value');
+        const incrementButton = document.getElementById('increment');
+        const decrementButton = document.getElementById('decrement');
+
+        let count = 0;
+
+        incrementButton.addEventListener('click', () => {
+            count++;
+            counterValue.textContent = count;
+        });
+
+        decrementButton.addEventListener('click', () => {
+            count--;
+            counterValue.textContent = count;
+        });
+    </script>
+
+</body>
+</html>
