@@ -1,11 +1,232 @@
-<!-- 
-Use headings and paragraphs to divide different sections of the website.
-Use tables to explain your educational qualification.
-Add images for your projects and yourself
-Use HTML lists to talk about your skills 
-Use Links to Navigate to your LinkedIn or GitHub profiles.
+<!DOCTYPE html>
+<html lang="en">
 
-Style the entire webpage according to your creativity
-Use all these ways of adding style to your webpage.
-Use CSS selectors when styling your lists and tables.
--->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRISH KUMAR - Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        background: #004080;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+
+      header p {
+        margin: 5px 0;
+        font-size: 1.1em;
+      }
+
+      header a {
+        color: #ffd700;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      header a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+
+      h2 {
+        color: #004080;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+      }
+
+      .profile-img {
+        display: block;
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #004080;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background: #f7f7f7;
+      }
+
+      table th,
+      table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      table th {
+        background: #004080;
+        color: #fff;
+      }
+
+      ul.skills {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul.skills li {
+        background: #004080;
+        color: #fff;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      ul.skills li:hover {
+        background: #0059b3;
+      }
+
+      .projects img {
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        margin: 10px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .projects h3 {
+        color: #004080;
+      }
+
+      .projects p a {
+        color: #004080;
+        text-decoration: none;
+      }
+
+      .projects p a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background: #004080;
+        color: #fff;
+      }
+
+      footer a {
+        color: #ffd700;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>KRISH KUMAR</h1>
+      <p>+91 7004779121 | krishkumar3004@gmail.com</p>
+      <p><a href="https://www.linkedin.com/in/krish-kumar-67780b229" target="_blank">LinkedIn</a> | <a
+          href="https://github.com/KrishKumar3004" target="_blank">GitHub</a></p>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+        <p>Passionate software engineer with expertise in web development, competitive programming, and problem-solving.
+          Currently pursuing B.Tech in Computer Science at NIT Jamshedpur.</p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Degree/Certificate</th>
+            <th>Institute</th>
+            <th>CGPA/%</th>
+          </tr>
+          <tr>
+            <td>2021 - Present</td>
+            <td>B.Tech - Computer Science and Engineering</td>
+            <td>NIT Jamshedpur</td>
+            <td>8.57/10.0</td>
+          </tr>
+          <tr>
+            <td>2019 - 2020</td>
+            <td>Class XII - CBSE</td>
+            <td>DAV Public School Hehal Ranchi</td>
+            <td>94%</td>
+          </tr>
+          <tr>
+            <td>2017 - 2018</td>
+            <td>Class X - CBSE</td>
+            <td>DAV Public School Hehal Ranchi</td>
+            <td>96.8%</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <ul class="skills">
+          <li>Languages: C, C++, JavaScript</li>
+          <li>Problem Solving, Data Structures and Algorithms, Competitive Programming</li>
+          <li>Web Technologies: HTML, CSS, Node.js, Express.js, React.js</li>
+          <li>Databases: MySQL</li>
+          <li>Tools/Platforms: Git, GitHub</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div class="projects">
+          <h3>YelpCamp</h3>
+          <p>Web App for reviewing campgrounds. <a href="https://yelp-camp-krish.onrender.com/">App Link</a> | <a
+              href="https://github.com/KrishKumar3004/Yelp-Camp">Source Code</a></p>
+          <p>Utilized Technologies: HTML, CSS, Node.js, Express.js, MongoDB.</p>
+
+          <h3>River Crossing Game</h3>
+          <p>Three Monks and Three Cannibals. <a href="https://monks-and-cannibals.vercel.app/">App Link</a> | <a
+              href="https://github.com/KrishKumar3004/monks-and-cannibals">Source Code</a></p>
+          <p>Utilized Technologies: React.js</p>
+
+          <h3>Dynamic Codeforces Rating Leaderboard</h3>
+          <p>Enables users to sort and filter records. <a href="https://leaderboard-cf-cse.vercel.app/">App Link</a> |
+            <a href="https://github.com/KrishKumar3004/leaderboard-cf-cse">Source Code</a></p>
+          <p>Utilized Technologies: React.js, Firebase.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 KRISH KUMAR. Connect with me on <a href="https://www.linkedin.com/in/krish-kumar-67780b229"
+          target="_blank">LinkedIn</a> and <a href="https://github.com/KrishKumar3004" target="_blank">GitHub</a>.</p>
+    </footer>
+  </body>
+
+</html>
